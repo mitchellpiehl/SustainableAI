@@ -1,140 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Skills | Mitchell Piehl Portfolio</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="portfolio.css" />
+  <title>Skills | Mitchell Piehl</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" href="images/mp.png" type="image/png" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="portfolio.css" />
 </head>
 <body>
-    <div id="header">
-        <div class="hcol1"><h1 class="head">Mitchell Piehl</h1></div>
-        <div class="hcol2">
-            <ul id="nav">
-                <li><a href="index.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="skills.html" class="current">Skills</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </div>
+    <header id="header">
+    <div class="logo">
+        <img src="images/mp.png" alt="MP Logo" class="logo-img" />
+        <h1 class="site-title">Mitchell Piehl</h1>
     </div>
+    <nav>
+        <ul id="nav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="skills.html" class="current">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
 
-    <div class="fade-in" id="wrapper">
-        <section id="skills">
-            <h1>Skills</h1>
-            <p>
-                Over the course of my academic and research career, I've built a strong technical foundation in software engineering, data science, and artificial intelligence. I complement these technical skills with a background in teaching, leadership, and interdisciplinary thinking, allowing me to approach challenges from both a technical and ethical perspective.
-            </p>
-            <div class="grid">
-                <div class="gcol1" style="width: 60%;">
-                    <section class="skill-category">
-                        <h2>Programming Languages</h2>
-                        <ul>
-                            <li>
-                                <strong>Python</strong> 
-                                <span class="skill-bar"><span class="fill" style="width: 90%"></span></span>
-                            </li>
-                            <li>Java
-                                <span class="skill-bar"><span class="fill" style="width: 70%"></span></span>
-                            </li>
-                            <li><strong>HTML, CSS, JavaScript</strong>
-                                <span class="skill-bar"><span class="fill" style="width: 80%"></span></span>
-                            </li>
-                            <li>C, C++
-                                <span class="skill-bar"><span class="fill" style="width: 40%"></span></span>
-                            </li>
-                            <li>MATLAB
-                                <span class="skill-bar"><span class="fill" style="width: 30%"></span></span>
-                            </li>
-                            <li><strong>R / RStudio</strong>
-                                <span class="skill-bar"><span class="fill" style="width: 80%"></span></span>
-                            </li>
-                            <li>SQL & ORMs
-                                <span class="skill-bar"><span class="fill" style="width: 70%"></span></span>
-                            </li>
-                        </ul>
-                    </section>
+  <section class="container fade-in">
+    <h1>Skills</h1>
+    <p>
+      My skillset blends <strong>deep technical expertise</strong> in AI and software engineering with <strong>teaching, leadership, and interdisciplinary insight</strong>.
+    </p>
 
-                    <section class="skill-category">
-                        <h2>Machine Learning & AI</h2>
-                        <ul>
-                            <li>Large Language Models (LLMs)</li>
-                            <li>Natural Language Processing</li>
-                            <li>Prompt Engineering</li>
-                            <li>Neural Networks & Fine-tuning</li>
-                            <li>Data Mining & Wrangling</li>
-                            <strong><li>AI Ethics & History</li></strong>
-                        </ul>
-                    </section>
-
-                    <section class="skill-category">
-                        <h2>Technical Tools & Concepts</h2>
-                        <ul>
-                            <li>Web Development & Frameworks</li>
-                            <li>Database Design & Querying</li>
-                        </ul>
-                    </section>
-
-                    <section class="skill-category">
-                        <h2>Non-Technical Skills</h2>
-                        <ul>
-                            <li>Teaching & Tutoring</li>
-                            <strong><li>Leadership & Teamwork</li></strong>
-                            <li>Academic & Technical Writing</li>
-                        </ul>
-                    </section>
-                </div>
-
-                <!-- Right Column: Logos -->
-                <div class="gcol3" style="width: 40%; text-align: center;">
-                    <div class="tech-logos">
-                        <img src="images/logos/python-5.svg" alt="Python logo" class="logo" />
-                        <img src="images/logos/java.svg" alt="Java logo" class="logo" />
-                        <img src="images/logos/html-1.svg" alt="HTML5 logo" class="logo" />
-                        <img src="images/logos/css-3.svg" alt="CSS3 logo" class="logo" />
-                        <img src="images/logos/javascript-r.svg" alt="JavaScript logo" class="logo" />
-                        <img src="images/logos/c.svg" alt="C logo" class="logo" />
-                        <img src="images/logos/c-1.svg" alt="C++ logo" class="logo" />
-                        <img src="images/logos/r-lang.svg" alt="R logo" class="logo" />
-                        <img src="images/logos/sqlite.svg" alt="SQL logo" class="logo" />
-                    </div>
-                </div>
-            </div>
+    <div class="grid">
+      <!-- Skills Column -->
+      <div class="gcol1">
+        <section class="skill-category">
+          <h2>Programming Languages</h2>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML/CSS/JS</li>
+            <li>R / RStudio</li>
+            <li>SQL & ORMs</li>
+            <li>C/C++</li>
+            <li>MATLAB</li>
+          </ul>
         </section>
-        <section id="skills">
-            <h1>Applications</h1>
-            <p>
-                I have gathered my skills from a wide range of applications and projects. Here are some of the highlights:
-            </p>
-            <div class="grid">
-                <div class="gcol1" style="width: 60%;">
-                    <section class="skill-category">
-                        <h2>Techincal Applications</h2>
-                        <ul>
-                            <li>Developed a History and Philosophy of AI website and Sustainable AI website</li>
-                            <li>Collaborated on a Full-Stack CRUD web app using Spring, and MongoDB</li>
-                            <li>Led machine learning analysis on quality of oranges using R and various machine learning techniques</li>
-                            <li>Created a small ultimate fantasy football python app utilizing ORMs</li>
-                        </ul>
-                    </section>
 
-                    <section class="skill-category">
-                        <h2>Non-Techincal Applications</h2>
-                        <ul>
-                            <li>Computer Science Tutoring</li>
-                            <li>Teachers Assistant for 200 level Data Science Course</li>
-                            <li>Captain of NCAA Division 1 track and field program</li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
+        <section class="skill-category">
+          <h2>Machine Learning & AI</h2>
+          <ul>
+            <li>Large Language Models (LLMs)</li>
+            <li>Natural Language Processing</li>
+            <li>Prompt Engineering</li>
+            <li>Neural Networks & Fine-tuning</li>
+            <li>AI Ethics & History</li>
+          </ul>
         </section>
-    </div>
 
-    <div id="footer">
-        © 2025 Mitchell Piehl
+        <section class="skill-category">
+          <h2>Other Technical Skills</h2>
+          <ul>
+            <li>Web Development (Full-stack CRUD, Spring, MongoDB)</li>
+            <li>Data Mining & Wrangling</li>
+            <li>Database Design & Querying</li>
+          </ul>
+        </section>
+
+        <section class="skill-category">
+          <h2>Soft Skills</h2>
+          <ul>
+            <li>Teaching & Tutoring</li>
+            <li>Leadership & Teamwork</li>
+            <li>Academic & Technical Writing</li>
+          </ul>
+        </section>
+      </div>
     </div>
+  </section>
+
+  <section class="container fade-in">
+    <h1>Applications</h1>
+    <p>Highlights of how I’ve applied my skills across research, teaching, and leadership:</p>
+    <div class="grid">
+      <div class="gcol1">
+        <section class="skill-category">
+          <h2>Technical</h2>
+          <ul>
+            <li>Developed <strong>History & Philosophy of AI</strong> website</li>
+            <li>Built <strong>Sustainable AI awareness</strong> site</li>
+            <li>Led ML analysis on <strong>orange quality prediction (R)</strong></li>
+            <li>Created Python <strong>fantasy football ORM app</strong></li>
+          </ul>
+        </section>
+
+        <section class="skill-category">
+          <h2>Leadership & Teaching</h2>
+          <ul>
+            <li>Computer Science Tutor</li>
+            <li>Teaching Assistant for Data Science course</li>
+            <li>Captain of NCAA Division I Track & Field Team</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">© 2025 Mitchell Piehl</footer>
 </body>
 </html>
+
