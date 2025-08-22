@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="portfolio.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div class="hcol1"><h1 class="head">Mitchell Piehl</h1></div>
+            <div class="hcol2">
+                <ul id="nav">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="content" class="contact_me">
+                <h1 class="center">Contact Me</h1>
+
+                <div class="contacts">
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mitchell-piehl-778435250" target="_blank">
+                                <img src="images/logos/linkedin-icon-3.svg" class="contact-logo" />
+                                <span>Add me on LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mitchellpiehl" target="_blank">
+                                <img src="images/logos/instagram-2016-5.svg" class="contact-logo" />
+                                <span>Follow me on Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mitchellpiehl/" target="_blank">
+                                <img src="images/logos/github-icon-2.svg" class="contact-logo" />
+                                <span>View my GitHub</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:mitchellpiehl@gmail.com" target="_blank">
+                                <img src="images/logos/official-gmail-icon-2020-.svg" class="contact-logo" />
+                                <span>Email me at mitchellpiehl@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="757d72b7-71f0-4681-ba07-c7efb58d6746">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <label for="first">First Name:</label>
+                    <input type="text" name="first" id="first" required />
+            
+                    <label for="last">Last Name:</label>
+                    <input type="text" name="last" id="last" required />
+            
+                    <label for="email_address">Email:</label>
+                    <input type="email" name="email" id="email_address" required />
+            
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" />
+            
+                    <label for="job">Who are you?</label>
+                    <select name="job" id="job">
+                        <option value="recruiter">Job Recruiter</option>
+                        <option value="student">Student</option>
+                        <option value="research">Researcher</option>
+                        <option value="professor">Professor</option>
+                        <option value="other">Other</option>
+                    </select>
+            
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required></textarea>
+
+                    <input type="hidden" name="redirect" value="https://pieh6361.dima358.com/portfolio/thanks.html">
+            
+                    <input type="submit" value="Send" />
+                </form>
+            </div>
+        </div>
+    </body>
+    <div id="footer">
+        © 2025 Mitchell Piehl
+    </div>
+</html>
