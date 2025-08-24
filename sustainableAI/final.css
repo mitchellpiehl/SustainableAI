@@ -423,59 +423,70 @@ input[type="submit"]:hover {
 p a {
     text-decoration: none;
 }
+
+/* Desktop parallax */
+@media screen and (min-width: 811px) {
+    .parallax-intro, .parallax-intro2, .parallax-intro3, .parallax-intro4,
+    .parallax-wrapper, .parallax-wrapper2, .parallax-wrapper3, .parallax-wrapper4,
+    .parallax-wrapper5, .parallax-wrapper6, .parallax-wrapper7, .parallax-wrapper8,
+    .parallax-wrapper9, .parallax-wrapper0 {
+        background-attachment: fixed;
+    }
+}
+
+/* Mobile adjustments */
 @media screen and (max-width: 810px) {
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.25rem; }
+    p { font-size: 0.95rem; }
+
     .grid {
-        display: block;
+        flex-direction: column;
+        gap: 1.5rem;
     }
-    .gcol1 {
+    .gcol1, .gcol3 {
         width: 100%;
+        position: relative;
+        top: 0;
     }
-    .gcol3 {
-        width: 100%;
-    }
+
     .quads {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap; 
-        max-width: 1200px;
-        margin: 0 auto; 
-        padding: 40px 20px; 
-        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 1rem;
     }
-    .hcol1{
+    .qcol1, .qcol2, .qcol3, .qcol4 {
         width: 100%;
     }
-    .hcol2{
-        width: 100%;
-    }
-    #nav {
-        display: none;
-    }
+
+    #nav { display: none; }
     #mobilenav {
         display: block;
         text-align: right;
-        font-size: 2em;
+        font-size: 1.75rem;
+        margin-right: 1rem;
     }
     #menu-toggle:checked + #nav {
         display: block;
-        position: static;
         text-align: center;
     }
     #nav li, #nav li a {
         width: 100%;
         display: block;
+        padding: 0.75em;
     }
-    #menu-toggle:checked + #nav li ul {
-        opacity: 1;
+    #nav li ul {
+        position: static;
     }
-    .hcol1 {
-        width: 100vw;
+
+    .intro-title { font-size: 1.75rem; }
+    .x-large { font-size: 1.75rem; margin-left: 0; }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
     }
-    .hcol2 {
-        width: 100vw;
-    }
-    .gcol1 {
-        position: relative;
-        top: 0;
-    }
+    #footer p { font-size: 0.85rem; }
 }
